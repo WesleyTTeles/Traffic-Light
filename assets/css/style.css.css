@@ -1,0 +1,78 @@
+*{
+    background-color: lightblue;
+    margin: 0;
+
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 100vw;
+    height: 100vh;
+}
+.traffic-light{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    width: 200px;
+    height: auto;
+    background-color: black;
+    
+}
+#red{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;   
+    margin: 20px 0;
+}
+#green{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50%;
+    opacity: .2;
+    margin: 20px 0px;
+}
+#yellow{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    opacity: .2;
+    margin: 10px 0px;
+}
+.line{
+    width: 50px;
+    height: 10px;
+    background-color: black;
+}
+#traffic-information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 150px;
+    height: 80px;
+    background-color: #e5e5e5;
+    font-size: 28px;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 400;
+    transition: 1s;
+}
+@media (max-width: 420px) and (min-width: 320px) {
+    .traffic-light{
+        width: 40%;
+        height: 70%;
+    }
+    #traffic-information{
+        width: 30%;
+        height: 10%;
+        font-size: 20px;
+
+    }
+
+}
